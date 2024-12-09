@@ -90,6 +90,7 @@ body, html {
     background: linear-gradient(to right, #cca936, #3b5b79);
   }
   
+  
   .btn-secondary {
     width: 100%;
     padding: 15px;
@@ -111,9 +112,9 @@ body, html {
     animation: spin 1s linear infinite;
   }
   
-  @keyframes spin {
+  /* @keyframes spin {
     to {
       transform: rotate(360deg);
-    }
-  }
+    } */
+  
   
