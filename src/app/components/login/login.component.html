@@ -5,19 +5,19 @@
         <h1 class="title">MS <span class="highlight">Admin511</span></h1>
         <p class="subtitle">Fill in your details to log in</p>
   
-        <!-- حقل البريد الإلكتروني -->
+     
         <div class="input-group">
           <input [(ngModel)]="model.emailOrUserName" type="email" placeholder="Email" class="form-control">
           <span class="icon"><i class="fa-solid fa-envelope"></i></span>
         </div>
   
-        <!-- حقل كلمة المرور -->
+        
         <div class="input-group">
           <input [(ngModel)]="model.password" type="password" placeholder="Password" class="form-control">
           <span class="icon"><i class="fa-solid fa-lock"></i></span>
         </div>
   
-        <!-- زر تسجيل الدخول -->
+     
         <button *ngIf="!isLoading" (click)="signIn()" class="btn-primary">
           <i class="fa-solid fa-lock me-1"></i> Log in
         </button>
