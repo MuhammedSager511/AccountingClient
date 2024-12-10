@@ -21,6 +21,7 @@ export class HttpService {
       headers: {
         "Authorization": "Bearer " + this.auth.token
       }
+      
     }).subscribe({
       next: (res)=> {
         if(res.data){

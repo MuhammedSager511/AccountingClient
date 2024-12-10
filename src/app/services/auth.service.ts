@@ -16,6 +16,7 @@ export class AuthService {
 
   isAuthenticated(){
     this.token = localStorage.getItem("token") ?? "";
+    
     if(this.token === ""){
       this.router.navigateByUrl("/login");
       return false;
@@ -34,10 +35,12 @@ export class AuthService {
     this.user.name = decode["Name"];
     this.user.email = decode["Email"];
     this.user.userName = decode["UserName"];
-
-    console.log(this.user);
-    
+    // this.user.companyId = decode["CompanyId"];
+    // this.user.companyResponse = JSON.parse(decode["Companies"]);
+    // this.user.isAdmin = decode["IsAdmin"] == "True" ? true : false;
 
     return true;
   }
+
+  
 }
