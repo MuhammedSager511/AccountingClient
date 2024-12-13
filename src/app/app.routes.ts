@@ -7,6 +7,7 @@ import { AuthService } from './services/auth.service';
 import { ExamplesComponent } from './components/examples/examples.component';
 import { UsersComponent } from './components/users/users.component';
 import { ConfrimEmailComponent } from './components/confrim-email/confrim-email.component';
+import { CompaniesComponent } from './components/companies/companies.component';
 
 export const routes: Routes = [
     {
@@ -30,6 +31,9 @@ export const routes: Routes = [
             {
                 path: "users",
                 component: UsersComponent
+            },{
+                path: "companies",
+                component: CompaniesComponent
             }
         ]
     }
