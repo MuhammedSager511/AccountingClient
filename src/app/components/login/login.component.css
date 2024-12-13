@@ -117,4 +117,14 @@ body, html {
       transform: rotate(360deg);
     } */
   
+    .resend-email-link {
+      color: #e2c337;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
   
+    .resend-email-link:hover {
+      color: #d4ac2b;
+      text-decoration: underline;
+    }

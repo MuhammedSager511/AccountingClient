@@ -6,11 +6,17 @@ import { inject } from '@angular/core';
 import { AuthService } from './services/auth.service';
 import { ExamplesComponent } from './components/examples/examples.component';
 import { UsersComponent } from './components/users/users.component';
+import { ConfrimEmailComponent } from './components/confrim-email/confrim-email.component';
 
 export const routes: Routes = [
     {
         path: "login",
         component: LoginComponent
+    },
+    {
+        path: "confrim-email/:email",
+        component : ConfrimEmailComponent
+
     },
     {
         path: "",
