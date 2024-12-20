@@ -35,9 +35,9 @@ export class AuthService {
     this.user.name = decode["Name"];
     this.user.email = decode["Email"];
     this.user.userName = decode["UserName"];
-    // this.user.companyId = decode["CompanyId"];
-    // this.user.companyResponse = JSON.parse(decode["Companies"]);
-    // this.user.isAdmin = decode["IsAdmin"] == "True" ? true : false;
+    this.user.companyId = decode["CompanyId"];
+    this.user.companies = JSON.parse(decode["Companies"]);
+    this.user.isAdmin = decode["IsAdmin"] == "True" ? true : false;
 
     return true;
   }

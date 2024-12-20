@@ -6,15 +6,17 @@ export class CompanyModel{
     taxDepartment: string = "";
     taxNumber:string = "";
     database: DatabaseModel = new DatabaseModel();
+    Id:string = "";
+    Name: string = "";
 }
 
-// export class LoginResponseCompanyModel{
-//     Id:string = "";
-//     Name: string = "";
-// }
+export class LoginResponseCompanyModel{
+    Id:string = "";
+    Name: string = "";
+}
 
 export class DatabaseModel{
-    server: string = "";
+    server: string = "(localdb)";
     databaseName: string = "";
     userId: string = "";
     password: string = "";
