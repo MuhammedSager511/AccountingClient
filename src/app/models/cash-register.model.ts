@@ -1,3 +1,4 @@
+import { CashRegisterDetailModel } from "./cash-register-detail.model";
 import { CurrencyTypeModel } from "./currency-type.model";
 
 
@@ -9,5 +10,5 @@ export class CashRegisterModel{
     currencyType: CurrencyTypeModel = new CurrencyTypeModel();
     currencyTypeValue: number = 1;
     balanceAmount:number=0;
-// details: CashRegisterDetailModel[] = [];    
+    details: CashRegisterDetailModel[] = [];    
 }

@@ -9,6 +9,7 @@ import { UsersComponent } from './components/users/users.component';
 import { ConfrimEmailComponent } from './components/confrim-email/confrim-email.component';
 import { CompaniesComponent } from './components/companies/companies.component';
 import { CashRegistersComponent } from './components/cash-registers/cash-registers.component';
+import { CashRegisterDetailComponent } from './components/cash-register-detail/cash-register-detail.component';
 
 export const routes: Routes = [
     {
@@ -43,6 +44,10 @@ export const routes: Routes = [
                     {
                         path: "",
                         component: CashRegistersComponent
+                    },
+                    {
+                        path: "details/:id",
+                        component: CashRegisterDetailComponent
                     }
                 ]
                 
